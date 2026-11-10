@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  gmao-server:
+    build: .
+    container_name: gmao_industrial_pro
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persistencia de base de datos relacional y uploads en el host
+      - ./data:/app/data
+    environment:
+      - GMAO_HOST=0.0.0.0
+      - GMAO_PORT=8000
+      - GMAO_DEBUG=False

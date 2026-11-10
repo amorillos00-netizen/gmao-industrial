@@ -1,0 +1,38 @@
+{
+  "name": "GMAO Industrial Pro",
+  "short_name": "GMAO Pro",
+  "description": "Sistema de Gestión de Mantenimiento Asistido por Ordenador y Confiabilidad",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1e293b",
+  "theme_color": "#0a6ed1",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/static/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/static/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Mis OTs Asignadas",
+      "url": "/#mis-ots",
+      "description": "Ver órdenes de trabajo del técnico"
+    },
+    {
+      "name": "Nueva Solicitud",
+      "url": "/#nueva-solicitud",
+      "description": "Reportar falla de maquinaria"
+    }
+  ]
+}
